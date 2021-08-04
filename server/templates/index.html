@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="gb2312"> 
+   <body>
+      <p>认证码:</p>
+      <p><input type = "text" name = "authcode" id="a"/></p>
+      <p>指令:</p>
+      <p>/<input type = "text" name = "mc_command" id="c"/></p>
+      <p><input type = "button" value = "提交"  onclick=sub() /></p>
+      <p>结果: </p><div id="r"></div>
+      <script src="/jquery"></script>
+      <script>
+         function sub() 
+         {
+            var a = document.getElementById("a").value;
+            var c = document.getElementById("c").value;
+            var req = '{"authcode":"' + a + '",' + '"mc_command":"' + c + '"}';
+         
+            $.ajax({
+            url:"/command_for_page",
+            type:"post",
+            data:req,
+            processData:false,
+            contentType:"application/json",
+            success:function(data){
+               document.getElementById("r").innerHTML=data;
+            },
+            error:function(e){
+                  alert("error");
+            }
+        })
+         }
+         </script>
+   </body>
+</html>
