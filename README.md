@@ -4,7 +4,10 @@
 *这只是早期版本，未来版本会支持sqlite<br>
 *在生产环境中请使用SSL，Flask原生<br>
 
-需要依赖Flask<br>
+#2021-8-4更新<br>
+提供一个网页接口，如不需要可以选择删除部分函数。<br>
+
+*需要依赖Flask<br>
 
 项目包含一个服务端和一个客户端，请在启动服务端之前修改configs.json和auth.json<br>
 auth.json包含API验证的信息(将来会使用加密)<br>
