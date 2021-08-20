@@ -14,7 +14,7 @@
 参数说明<br>
 apikey : 存储在服务端auth.db中<br>
 command : 需要执行的指令<br>
-time : 当前时间截 #120s内有效<br>
+time : 当前时间戳#120s内有效<br>
 sign : 鉴权签名<br>
     已经提供了一个Python模块(RconAPI.py)一键取得,也有一个例子进行手动计算(client_sample.py)<br>
     计算方法:  使用去除sign之后的URL参数串(按首字母排序) <br>
