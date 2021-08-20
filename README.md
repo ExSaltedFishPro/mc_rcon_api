@@ -17,7 +17,7 @@ command : 需要执行的指令<br>
 time : 当前时间截 #120s内有效<br>
 sign : 鉴权签名<br>
     已经提供了一个Python模块(RconAPI.py)一键取得,也有一个例子进行手动计算(client_sample.py)<br>
-    计算方法:  使用去除sign之后的URL参数串 <br>
+    计算方法:  使用去除sign之后的URL参数串(按首字母排序) <br>
     例：apikey=x&command=x&time=x<br>
     使用secret_key作为密钥，进行HMAC.sha256加密<br>
     将加密结果转换成字符串，再使用base64进行编码即得到签名<br><br><br>
