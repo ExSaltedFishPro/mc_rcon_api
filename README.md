@@ -20,10 +20,8 @@ sign : 鉴权签名<br>
     计算方法:  使用去除sign之后的URL参数串 <br>
     例：apikey=x&command=x&time=x<br>
     使用secret_key作为密钥，进行HMAC.sha256加密<br>
-    将加密结果转换成字符串，再使用base64进行编码即得到签名<br>
-
-
-##以下为网页简易版本(旧)(./webpage-edition)
+    将加密结果转换成字符串，再使用base64进行编码即得到签名<br><br><br>
+##以下为网页简易版本(旧)(./webpage-edition)<br>
 #2021-8-4更新<br>
 提供一个网页接口，如不需要可以选择删除部分函数。<br>
 
